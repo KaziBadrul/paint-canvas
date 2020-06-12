@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <h1 class="header">Paint.com</h1>
+        <button class="info">Help</button>
+        <button class="deleteCanvas">Clean</button>
+    </div>
+    <div class="canvasArea">
+        <canvas class="canvas"></canvas>
+        <div class="canvasControls">
+            <div>
+                <p>Size</p>
+                <input type="range" min="0" max="10" step="1" value="1" id="slider">
+            </div>
+            <div>
+                <p>Pen Color</p>
+                <input type="color" id="penColor" value="#ffffff">
+            </div>
+            <div>
+                <p>Canvas Color</p>
+                <input type="color" id="backgroundColor" value="#000000">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
